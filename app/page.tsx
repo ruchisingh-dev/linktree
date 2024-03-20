@@ -38,6 +38,7 @@ const HomePage = () => {
           <div className="flex flex-col gap-5">
             {authorInfo.projects.map((project) => (
               <ProjectCard
+              key={project.title}
                 title={project.title}
                 description={project.description}
                 repoLink={project.repoLink}
