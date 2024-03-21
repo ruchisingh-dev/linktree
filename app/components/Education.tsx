@@ -7,7 +7,7 @@ const Education = () => {
       <div className="flex gap-2 items-center flex-wrap">
         <ul className="list-disc pl-3 flex flex-col gap-2">
           {authorInfo.education.map((item) => (
-            <li>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </div>

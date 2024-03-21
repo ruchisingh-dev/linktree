@@ -6,7 +6,7 @@ const TechStack = () => {
       <h3 className="text-xl mb-2 font-semibold">Tech Stack</h3>
       <div className="flex gap-2 items-center flex-wrap text-sm">
         {authorInfo.techStack.map((tech) => (
-          <TechItem name={tech} />
+          <TechItem key={tech} name={tech} />
         ))}
       </div>
     </div>
